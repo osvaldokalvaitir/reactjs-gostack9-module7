@@ -82,6 +82,7 @@ function Cart({ cart, total, removeFromCart, updateAmount }) {
     </Container>
   );
 }
+
 const mapStateToProps = state => ({
   cart: state.cart.map(product => ({
     ...product,
