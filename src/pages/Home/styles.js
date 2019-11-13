@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
+export const Container = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+`;
+
 export const ProductList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { MdAddShoppingCart } from 'react-icons/md';
+import ReactLoading from 'react-loading';
 import { formatPrice } from '../../util/format';
 import api from '../../services/api';
 
 import * as CartActions from '../../store/modules/cart/actions';
 
-import { ProductList } from './styles';
+import { Container, ProductList } from './styles';
 
 class Home extends Component {
   state = {
     products: [],
+    loading: true,
   };
 
   async componentDidMount() {
@@ -22,7 +24,7 @@ class Home extends Component {
       priceFormatted: formatPrice(product.price),
     }));
 
-    this.setState({ products: data });
+    this.setState({ products: data, loading: false });
   }
 
   handleAddProduct = id => {
@@ -32,8 +34,16 @@ class Home extends Component {
   };
 
   render() {
-    const { products } = this.state;
+    const { products, loading } = this.state;
     const { amount } = this.props;
+
+    if (loading) {
+      return (
+        <Container>
+          <ReactLoading type="spinningBubbles" height={50} width={50} />
+        </Container>
+      );
+    }
 
     return (
       <ProductList>
