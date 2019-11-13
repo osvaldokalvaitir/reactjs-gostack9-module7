@@ -11,7 +11,7 @@ import { formatPrice } from '../../util/format';
 
 import * as CartActions from '../../store/modules/cart/actions';
 
-import { Container, ProductTable, Total } from './styles';
+import { Container, ProductTable, Total, EmptyCart } from './styles';
 
 function Cart({ cart, total, removeFromCart, updateAmountRequest }) {
   function increment(product) {
@@ -35,39 +35,47 @@ function Cart({ cart, total, removeFromCart, updateAmountRequest }) {
           </tr>
         </thead>
         <tbody>
-          {cart.map(product => (
+          {cart.length === 0 ? (
             <tr>
-              <td>
-                <img src={product.image} alt={product.title} />
-              </td>
-              <td>
-                <strong>{product.title}</strong>
-                <span>{product.priceFormatted}</span>
-              </td>
-              <td>
-                <div>
-                  <button type="button" onClick={() => decrement(product)}>
-                    <MdRemoveCircleOutline size={20} color="#715951" />
-                  </button>
-                  <input type="number" readOnly value={product.amount} />
-                  <button type="button" onClick={() => increment(product)}>
-                    <MdAddCircleOutline size={20} color="#715951" />
-                  </button>
-                </div>
-              </td>
-              <td>
-                <strong>{product.subtotal}</strong>
-              </td>
-              <td>
-                <button
-                  type="button"
-                  onClick={() => removeFromCart(product.id)}
-                >
-                  <MdDelete size={20} color="#7159c1" />
-                </button>
+              <td colSpan="5">
+                <EmptyCart>carrinho vazio</EmptyCart>
               </td>
             </tr>
-          ))}
+          ) : (
+            cart.map(product => (
+              <tr>
+                <td>
+                  <img src={product.image} alt={product.title} />
+                </td>
+                <td>
+                  <strong>{product.title}</strong>
+                  <span>{product.priceFormatted}</span>
+                </td>
+                <td>
+                  <div>
+                    <button type="button" onClick={() => decrement(product)}>
+                      <MdRemoveCircleOutline size={20} color="#715951" />
+                    </button>
+                    <input type="number" readOnly value={product.amount} />
+                    <button type="button" onClick={() => increment(product)}>
+                      <MdAddCircleOutline size={20} color="#715951" />
+                    </button>
+                  </div>
+                </td>
+                <td>
+                  <strong>{product.subtotal}</strong>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    onClick={() => removeFromCart(product.id)}
+                  >
+                    <MdDelete size={20} color="#7159c1" />
+                  </button>
+                </td>
+              </tr>
+            ))
+          )}
         </tbody>
       </ProductTable>
 
