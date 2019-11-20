@@ -10,7 +10,7 @@
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 ![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 
-Aplicação Rocketshoes usando Redux, Redux-Saga, immer, history, React Router, react-toastify, styled-components, React Icons e polished.
+Aplicação Rocketshoes usando Redux, Redux-Saga, Immer, history, React Router, react-toastify, styled-components, React Icons e polished.
 
 ## Índice
 
@@ -80,7 +80,7 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 - [history](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/history.md)
 
-- [immer](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/immer.md)
+- [Immer](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/immer.md)
 
 - [JSON Server](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/json-server.md)
 
