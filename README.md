@@ -32,6 +32,10 @@ Aplicação Rocketshoes usando Redux, Redux-Saga, immer, history, React Router, 
 
   - [Bibliotecas](#bibliotecas)
 
+  - [APIs](#apis)
+
+  - [Ferramentas](#ferramentas)
+
 ## Capturas de Tela
 
 ### Home
