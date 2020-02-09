@@ -40,12 +40,12 @@ Aplicação Rocketshoes usando Redux, Redux-Saga, Immer, history, React Router, 
 
 ### Home
 
-![Home](/assets/home.png)
+![Home](/.github/assets/home.png)
 Esta é a primeira tela, onde encontram-se todos os produtos vindos da API, podendo adicionar os produtos no carrinho.
 
 ### Carrinho
 
-![Cart](/assets/cart.png)
+![Cart](/.github/assets/cart.png)
 Nesta tela, encontram-se todos os produtos que são adicionados ao carrinho, podendo alterar a quantidade ou excluir o produto e também voltar para a página inicial.
 
 ## Desenvolvimento
