@@ -1,128 +1,61 @@
-# ReactJS - Módulo 7 (Novo)
+<h1 align="center">
+    <img src="/.github/assets/logo.png"
+    width="200px"
+    alt="Logo" />
+</h1>
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/osvaldokalvaitir/reactjs-modulo7-novo/blob/master/LICENSE)
-![](https://img.shields.io/github/package-json/v/osvaldokalvaitir/reactjs-modulo7-novo.svg)
-![](https://img.shields.io/github/last-commit/osvaldokalvaitir/reactjs-modulo7-novo.svg?color=red)
-![](https://img.shields.io/github/languages/top/osvaldokalvaitir/reactjs-modulo7-novo.svg?color=yellow)
-![](https://img.shields.io/github/languages/count/osvaldokalvaitir/reactjs-modulo7-novo.svg?color=lightgrey)
-![](https://img.shields.io/github/languages/code-size/osvaldokalvaitir/reactjs-modulo7-novo.svg)
-![](https://img.shields.io/github/repo-size/osvaldokalvaitir/reactjs-modulo7-novo.svg?color=blueviolet)
-[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+<h3 align="center">
+  ReactJS - GoStack 9 Module 7
+</h3>
 
-Aplicação Rocketshoes usando Redux, Redux-Saga, Immer, history, React Router, react-toastify, styled-components, React Icons, polished e Hooks.
+<p align="center">
+  :shoe: Rocketshoes Application using Redux, Redux-Saga, Immer, history, React Router, react-toastify, styled-components, React Icons, polished, Hooks, Reactotron and consuming the features of the JSON Server API
+</p>
 
-## Índice
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/osvaldokalvaitir/reactjs-gostack9-module7.svg?color=00A83A">
 
-- [Capturas de Tela](#capturas-de-tela)
+  <img alt="GitHub language top" src="https://img.shields.io/github/languages/top/osvaldokalvaitir/reactjs-gostack9-module7.svg?color=00A83A">
 
-  - [Home](#home)
+  <a href="https://kalvaitir.com/">
+    <img alt="Made by Kalvaitir" src="https://img.shields.io/badge/made%20by-Kalvaitir-00A83A">
+  </a>
 
-  - [Carrinho](#carrinho)
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-00A83A">
+</p>
 
-- [Desenvolvimento](#desenvolvimento)
+<p align="center">
+  <a href="#computer-demo">Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#wrench-install-and-run">Install and run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#memo-license">License</a>
+</p>
 
-  - [Configuração do Ambiente](#configuração-do-ambiente)
+## :computer: Demo
 
-  - [Instalação do Projeto](#instalação-do-projeto)
+![Demo](/.github/assets/demo.gif)
 
-  - [Execução do Projeto](#execução-do-projeto)
+## :wrench: Install and run
 
-- [Utilizados no Projeto](#utilizados-no-projeto)
+Open terminal:
 
-  - [Bibliotecas](#bibliotecas)
+```sh
+# Clone this repo
+git clone https://github.com/osvaldokalvaitir/reactjs-gostack9-module7
 
-  - [APIs](#apis)
+# Entry in folder
+cd reactjs-gostack9-module7
 
-  - [Ferramentas](#ferramentas)
+# Run API
+json-server server.json
 
-## Capturas de Tela
+# Launch the app with npm or yarn
+npm start | yarn start
+```
 
-### Home
+## :memo: License
 
-![Home](/.github/assets/home.png)
-Esta é a primeira tela, onde encontram-se todos os produtos vindos da API, podendo adicionar os produtos no carrinho.
+This project is under the MIT license. See [LICENSE](/LICENSE) for more information.
 
-### Carrinho
+---
 
-![Cart](/.github/assets/cart.png)
-Nesta tela, encontram-se todos os produtos que são adicionados ao carrinho, podendo alterar a quantidade ou excluir o produto e também voltar para a página inicial.
-
-## Desenvolvimento
-
-### Configuração do Ambiente
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/README.md) e siga `Configuração de Ambiente`.
-
-### Instalação do Projeto
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/nodejs.md) e siga `Instalação de Projeto`.
-
-### Execução do Projeto
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/create-react-app.md) e siga `Execução de Projeto para Desenvolvimento` ou `Construção e Execução de Projeto para Produção`.
-
-## Utilizados no Projeto
-
-### Bibliotecas
-
-- [Axios](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/axios.md)
-
-- [babel-eslint](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/babel-eslint.md)
-
-- [Create React App](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/create-react-app.md)
-
-- [ESLint](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint.md)
-
-- [eslint-config-prettier](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint-config-prettier.md)
-
-- [eslint-plugin-prettier](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint-plugin-prettier.md)
-
-- [history](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/history.md)
-
-- [Immer](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/immer.md)
-
-- [JSON Server](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/json-server.md)
-
-- [polished](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/polished.md)
-
-- [Prettier](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/prettier.md)
-
-- [React Icons](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-icons.md)
-
-- [react-loading](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-loading.md)
-
-- [react-redux](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-redux.md)
-
-- [react-router-dom](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-router-dom.md)
-
-- [react-toastify](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-toastify.md)
-
-- [reactotron-react-js](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-react-js.md)
-
-- [reactotron-redux](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-redux.md)
-
-- [reactotron-redux-saga](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-redux-saga.md)
-
-- [Redux](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/redux.md)
-
-- [Redux-Saga](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/redux-saga.md)
-
-- [styled-components](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/styled-components.md)
-
-### APIs
-
-- **API do Json Server**
-
-  - **Rotas**
-
-    - Produtos
-
-      - Busca dados de todos os produtos
-
-    - Estoque
-
-      - Busca estoque de um produto
-
-### Ferramentas
-- [Reactotron](https://github.com/osvaldokalvaitir/projects-settings/blob/master/inspector/reactotron.md)
+<p align="center">
+Developed with 💚 by <a href="https://www.linkedin.com/in/osvaldokalvaitir">Osvaldo Kalvaitir Filho</a>
+</p>
