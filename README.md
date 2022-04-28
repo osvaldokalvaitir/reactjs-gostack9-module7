@@ -43,6 +43,9 @@ git clone https://github.com/osvaldokalvaitir/reactjs-gostack9-module7
 # Entry in folder
 cd reactjs-gostack9-module7
 
+# Install deps with npm or yarn
+npm install | yarn
+
 # Run API
 json-server server.json
 
